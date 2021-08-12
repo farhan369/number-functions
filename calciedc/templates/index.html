@@ -1,13 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>number functions</h1>
+<h1>select</h1>
 
-<form action="print" method="post">
+<form action="select" method="post">
     {% csrf_token %}
-  enter numer : <input type="text" name="number"><br>
-  <input type="submit" name="print1" value="prime checker"/>
-  <input type="submit" name="print2" value="factorial"/>
-  <input type="submit" name="print3" value="odd or even"/>
+  <input type="submit" name="select1" value="binary calculator"/>
+  <input type="submit" name="select2" value="number functions"/>
 
 
 </form>

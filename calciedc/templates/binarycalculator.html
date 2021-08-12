@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>binary calculator</h1>
+
+<form action="calculate" method="post">
+    {% csrf_token %}
+  enter number1 : <input type="text" name="number1"><br>
+  enter number2 : <input type="text" name="number2"><br>
+  <input type="submit" name="add" value=" add"/>
+  <input type="submit" name="sub" value="subtracte"/>
+  <input type="submit" name="mult" value="multiply"/>
+  <input type="submit" name="div" value="division"/>
+  
+
+
+
+</form>
+
+{%  endblock %}

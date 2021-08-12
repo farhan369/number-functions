@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>number functions</h1>
+
+<form action="print" method="post">
+    {% csrf_token %}
+  enter numer : <input type="text" name="number"><br>
+  <input type="submit" name="print1" value="prime checker"/>
+  <input type="submit" name="print2" value="factorial"/>
+  <input type="submit" name="print3" value="odd or even"/>
+  <input type="submit" name="print4" value="armstrong"/>
+
+
+</form>
+
+{%  endblock %}

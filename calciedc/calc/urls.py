@@ -4,4 +4,6 @@ urlpatterns = [
 
     path('',views.indexpage),
     path('print',views.print),
+    path('select',views.select),
+    path('calculate',views.calculate)
 ]
